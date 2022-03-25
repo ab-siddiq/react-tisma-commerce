@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# TISMA COMMERCE
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+VISIT US [TISMA COMMERCE LIVE](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
 
