@@ -2,5 +2,18 @@
     background-color: #ffff49;
     border-radius: 15px;
     position: sticky;
-    top: 0px;
+    top: 100px;
+    
+}
+.button-area{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+.cart-items{
+    position: sticky;
+    top: 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 50px;
 }

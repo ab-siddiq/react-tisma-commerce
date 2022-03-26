@@ -14,8 +14,14 @@ const Shop = () => {
     }, [])
     // console.log(products);
     const handleAddToCart = product => {
-        const newCart = [...cart, product];
-        setCart(newCart);
+        let newCart = [];
+        if (newCart.length > 4) {
+            setCart(4);
+        }
+        else {
+            newCart = [...cart, product];
+            setCart(newCart);
+        }
     }
     return (
         <div className="shop">
@@ -24,7 +30,8 @@ const Shop = () => {
                     products.map(product=><Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)
                 }
             </div>
-            <Cart key={cart} cart={cart} ></Cart>
+                <Cart key={cart} cart={cart} ></Cart>
+           
         </div>
         
     );
