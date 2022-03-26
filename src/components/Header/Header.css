@@ -4,4 +4,18 @@
     position: sticky;
     top: 0px;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.brand-name{
+    font-size: 2rem;
+}
+.header a{
+    text-decoration: none;
+    color: #000a83;
+    margin: 0 20px;
+}
+.menu{
+    
 }

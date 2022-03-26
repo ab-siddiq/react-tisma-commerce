@@ -14,9 +14,11 @@ const Shop = () => {
     }, [])
     // console.log(products);
     const handleAddToCart = product => {
+        cart.find(id=>console.log("in"))
+        console.log(product.id)
         let newCart = [];
         if (newCart.length > 4) {
-            setCart(4);
+            alert("already")
         }
         else {
             newCart = [...cart, product];

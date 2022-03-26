@@ -3,7 +3,16 @@ import './Header.css'
 const Header = () => {
     return (
         <div className='header'>
-            <a href='/#'>Tisma Commerce</a>
+            <div className="brand-name">
+            <a href='/tisma_commerce'>Tisma Commerce</a>
+            </div>
+            
+            <div className='menu'>
+            <a href='/shop'>Shop</a>
+            <a href='/product'>Product</a>
+            <a href='/contact'>Contact</a>
+            </div>
+            
         </div>
     );
 };
