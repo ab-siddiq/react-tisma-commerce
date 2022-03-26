@@ -25,10 +25,7 @@ const Shop = () => {
     }
 
     const handleRemoveCart = () => {
-        let cart = [];
-        setCart(cart);
-        console.log("yes")
-
+        setCart([]);
     }
 
   
@@ -39,7 +36,7 @@ const Shop = () => {
                     products.map(product=><Product key={product.id} product={product} handleAddToCart={handleAddToCart}></Product>)
                 }
             </div>
-                <Cart key={cart} cart={cart} ></Cart>
+                <Cart key={cart} cart={cart} handleRemoveCart={handleRemoveCart} ></Cart>
            
         </div>
         

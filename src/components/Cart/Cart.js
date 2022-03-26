@@ -3,7 +3,7 @@ import CartItem from '../CartItem/CartItem';
 import RandomItem from '../RandomItem/RandomItem';
 import './Cart.css';
 
-const Cart = ({ cart }) => {
+const Cart = ({ cart,handleRemoveCart }) => {
     const [randomItem, setRandomItem] = useState([]);
     const selectRandom = item => {
         const keys = Object.keys(item);
@@ -18,7 +18,7 @@ const Cart = ({ cart }) => {
                 {cart.map(item => <CartItem key={item.id} item={item}></CartItem>)}
                 <div className="button-area">
                     <button onClick={() => selectRandom(cart)}>Choose 1 Fro Me</button>
-                    <button >Choose Again</button>
+                    <button onClick={handleRemoveCart}>Choose Again</button>
                 </div>
                 <RandomItem key={cart.id} cart={cart[randomItem]}></RandomItem>
             </div>
