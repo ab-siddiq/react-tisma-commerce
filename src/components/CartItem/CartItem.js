@@ -2,6 +2,7 @@ import React from 'react';
 import './CartItem.css';
 const CartItem = (props) => {
     const { item } = props;
+    
     return (
         <div className='cart-item'>          
             <img src={item.image} alt={item.title} />        

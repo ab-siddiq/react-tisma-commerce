@@ -8,3 +8,17 @@
     width: 20px;
     height: 20px;
 }
+.button-area{
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+}
+
+    
+@media only screen and (max-width: 600px) {
+    .cart-item{
+        display: grid;
+        justify-content: center;
+        margin: 0;
+    }
+  }
