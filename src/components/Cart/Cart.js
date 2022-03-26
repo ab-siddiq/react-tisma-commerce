@@ -4,7 +4,7 @@ import RandomItem from '../RandomItem/RandomItem';
 import './Cart.css'
 
 const Cart = ({ cart }) => {
-    const [randomItem, setRandomItem] = useState(0);
+    const [randomItem, setRandomItem] = useState([]);
     const selectRandom = item => {
         const keys = Object.keys(item);
         let randomKey = 0;
