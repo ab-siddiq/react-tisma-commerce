@@ -23,6 +23,15 @@ const Shop = () => {
             setCart(newCart);
         }
     }
+
+    const handleRemoveCart = () => {
+        let cart = [];
+        setCart(cart);
+        console.log("yes")
+
+    }
+
+  
     return (
         <div className="shop">
             <div className='card'>
@@ -35,6 +44,6 @@ const Shop = () => {
         </div>
         
     );
+   
 };
-
-export default Shop;
+export default ( Shop );

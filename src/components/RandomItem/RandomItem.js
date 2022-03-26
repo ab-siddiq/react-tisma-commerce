@@ -9,7 +9,7 @@ const RandomItem = ({ cart }) => {
     } else {
          randItemPrice = cart.price;
          randItemImage = cart.image;
-         randItemName = cart.title;
+         randItemName = cart.title.slice(0,15);
     }
     return (
         
